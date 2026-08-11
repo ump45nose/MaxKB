@@ -114,7 +114,7 @@ class HistoricalConversationView(APIView):
             description=_("Batch delete history conversation"),
             summary=_("Batch delete history conversation"),
             operation_id=_("V3 Batch delete history conversation"),  # type: ignore
-            parameters=HistoricalConversationOperateAPI.get_parameters(),
+            parameters=[],
             responses=HistoricalConversationOperateAPI.get_response(),
             tags=[_('V3 Chat')]  # type: ignore
         )
